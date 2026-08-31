@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,58 @@
     <link rel="stylesheet" href="estilos.css">
     <script src="codigo.js"></script>
 </head>
+
 <body>
-    
+    <div class="caja_master">
+        <div class="hijo1">
+            <img src="imagenes/logo.jpg" alt="imagen" width="150px">
+        </div>
+        <div class="hijo2">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index2.html">Registarse</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Library</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <center>
+        <h2 style="color: #e9e1e1;">Instagriddy</h2>
+
+        </h2>
+        <p class="introduccion" style="color: #e9e1e1d0;">Publica fotos y videos, crea historias, interactúa con
+            otras personas y explora
+            según
+            tus intereses</p>
+    </center>
+
+    <hr>
+    <center>
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label" style="color: #e9e1e1d0;">Correo electrónico /
+                    Nombre de usuario</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text" style="color: #e9e1e1d0;">Nunca compartiremos tu correo
+                    electrónico con nadie más.</div>
+            </div>
+    </center>
+    <center>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+    </center>
+    </div>
+    <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">No soy un robot</label>
+    </div>
+    <center>
+        <button type="submit" class="btn btn-primary" onclick="inicio()">Iniciar sesíon </button>
+        <p id="notificacion"></p>
+        </form>
+    </center>
+
 </body>
+
 </html>
