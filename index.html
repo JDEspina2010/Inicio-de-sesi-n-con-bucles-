@@ -12,32 +12,49 @@
   <div class="contenedor">
 
     <div class="seccion izquierda">
-      <div class="encabezado-seccion">
-        <img src="imagenes/logo.jpg" alt="Logo" class="logo-img" onerror="this.style.display='none'">
-        <h2>Iniciar sesión</h2>
-        <p>Ingresa a tu cuenta de Instagriddy para continuar.</p>
+      
+      <div class="caja_master">
+        <div class="hijo1">
+          <img src="imagenes/logo.jpg" alt="Logo" class="logo-img" onerror="this.style.display='none'">
+        </div>
+        <div class="hijo2">
+          <nav aria-label="breadcrumb">
+            <ol class="menu-navegacion">
+              <li class="item-navegacion"><a href="#">Iniciar sesión</a></li>
+              <li class="item-navegacion activo" aria-current="page">Registrarse</li>
+            </ol>
+          </nav>
+        </div>
       </div>
 
-      <form class="formulario" onsubmit="event.preventDefault(); inicio();">
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Correo electrónico / Nombre de usuario</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Tu correo o usuario" required>
-          <div id="emailHelp" class="form-text">Nunca compartiremos tu correo electrónico con nadie más.</div>
+      <div class="bloque-login">
+        <div class="encabezado-seccion">
+          <h2>Iniciar sesión</h2>
+          <p>Ingresa a tu cuenta de Instagriddy para continuar.</p>
         </div>
 
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Tu contraseña" required>
-        </div>
+        <form class="formulario" onsubmit="event.preventDefault(); inicio();">
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Correo electrónico / Nombre de usuario</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Tu correo o usuario" required>
+            <div id="emailHelp" class="form-text">Nunca compartiremos tu correo electrónico con nadie más.</div>
+          </div>
 
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">No soy un robot</label>
-        </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Tu contraseña" required>
+          </div>
 
-        <button type="submit" class="btn btn-login">Iniciar sesión</button>
-        <p id="notificacion"></p>
-      </form>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">No soy un robot</label>
+          </div>
+
+          <button type="submit" class="btn btn-login">Iniciar sesión</button>
+          <p id="notificacion"></p>
+        </form>
+      </div>
+
     </div>
 
     <div class="seccion derecha">

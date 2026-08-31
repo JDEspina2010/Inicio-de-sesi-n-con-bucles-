@@ -19,11 +19,18 @@
 }
 
 .izquierda {
-  background-color: #323230;
+  background-color: #2b2d42;
   color: #ffffff;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 20px; 
+}
+
+.bloque-login {
+  margin: auto 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .izquierda .encabezado-seccion {
@@ -42,22 +49,22 @@
   height: auto;
 }
 
-.breadcrumb {
+.menu-navegacion {
   display: flex;
   list-style: none;
   gap: 15px;
 }
 
-.breadcrumb-item a {
+.item-navegacion a {
   color: #8d99ae;
   text-decoration: none;
 }
 
-.breadcrumb-item a:hover {
+.item-navegacion a:hover {
   text-decoration: underline;
 }
 
-.breadcrumb-item.active {
+.item-navegacion.activo {
   color: #ffffff;
 }
 
