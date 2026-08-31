@@ -1,65 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="estilos.css">
-    <script src="codigo.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión y Registrarse</title>
+  <link rel="stylesheet" href="estilos.css">
+  <script src="codigo.js"></script>
 </head>
-
 <body>
-    <div class="caja_master">
-        <div class="hijo1">
-            <img src="imagenes/logo.jpg" alt="imagen" width="150px">
-        </div>
-        <div class="hijo2">
-            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index2.html">Registarse</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Library</li>
-                </ol>
-            </nav>
-        </div>
-    </div>
-    <center>
-        <h2 style="color: #e9e1e1;">Instagriddy</h2>
 
-        </h2>
-        <p class="introduccion" style="color: #e9e1e1d0;">Publica fotos y videos, crea historias, interactúa con
-            otras personas y explora
-            según
-            tus intereses</p>
-    </center>
+  <div class="contenedor">
 
-    <hr>
-    <center>
-        <form>
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label" style="color: #e9e1e1d0;">Correo electrónico /
-                    Nombre de usuario</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text" style="color: #e9e1e1d0;">Nunca compartiremos tu correo
-                    electrónico con nadie más.</div>
-            </div>
-    </center>
-    <center>
+    <div class="seccion izquierda">
+      <div class="encabezado-seccion">
+        <img src="imagenes/logo.jpg" alt="Logo" class="logo-img" onerror="this.style.display='none'">
+        <h2>Iniciar sesión</h2>
+        <p>Ingresa a tu cuenta de Instagriddy para continuar.</p>
+      </div>
+
+      <form class="formulario" onsubmit="event.preventDefault(); inicio();">
         <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-    </center>
-    </div>
-    <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">No soy un robot</label>
-    </div>
-    <center>
-        <button type="submit" class="btn btn-primary" onclick="inicio()">Iniciar sesíon </button>
+          <label for="exampleInputEmail1" class="form-label">Correo electrónico / Nombre de usuario</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Tu correo o usuario" required>
+          <div id="emailHelp" class="form-text">Nunca compartiremos tu correo electrónico con nadie más.</div>
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Tu contraseña" required>
+        </div>
+
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">No soy un robot</label>
+        </div>
+
+        <button type="submit" class="btn btn-login">Iniciar sesión</button>
         <p id="notificacion"></p>
-        </form>
-    </center>
+      </form>
+    </div>
+
+    <div class="seccion derecha">
+      <div class="encabezado-seccion">
+        <h2>Crear una cuenta</h2>
+        <p>Regístrate para compartir momentos y conectar con amigos.</p>
+      </div>
+
+      <form class="formulario" onsubmit="event.preventDefault(); registrar();">
+        <div class="mb-3">
+          <label for="nombreRegistro" class="form-label">Nombre completo</label>
+          <input type="text" class="form-control" id="nombreRegistro" placeholder="Tu nombre" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="emailRegistro" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="emailRegistro" placeholder="correo@ejemplo.com" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="userRegistro" class="form-label">Nombre de usuario</label>
+          <input type="text" class="form-control" id="userRegistro" placeholder="usuario123" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="passRegistro" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="passRegistro" placeholder="Crea una contraseña" required>
+        </div>
+
+        <button type="submit" class="btn btn-registro">Registrarse</button>
+        <p id="notificacionRegistro"></p>
+      </form>
+    </div>
+
+  </div>
 
 </body>
-
 </html>
