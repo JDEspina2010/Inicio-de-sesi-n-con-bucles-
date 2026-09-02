@@ -32,4 +32,3 @@ function inicio() {
         notificacion.style.color = "red";
     }
 }
-
