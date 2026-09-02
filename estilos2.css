@@ -1,0 +1,174 @@
+
+#Titulo{
+    background-color: rgb(0, 255, 242);
+    height: 50px;
+    margin: 0%;
+    border-bottom: 3px solid rgb(0, 100, 20);
+}
+.master{
+    display: flex;
+    height: 220px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+.hijo1{
+    color: rgb(2, 2, 2);
+    background-color: rgba(0, 132, 255, 0.705);
+    width: 33.33%;
+    height: 700px;
+    margin: 15px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+.hijo2{
+    background-color: rgba(0, 81, 255, 0.801);
+    width: 33.33%;
+    height: 700px;
+    margin: 15px;
+    cursor: pointer;
+    border-radius: 12px;
+
+}
+.hijo3{
+    background: linear-gradient(to right, rgb(0, 138, 0) , rgb(0, 235, 243));
+    width: 33.33%;
+    height: 700px;
+    margin: 15px;
+    cursor: pointer;
+    border-radius: 12px;
+
+}
+.text_lap{
+    color: white;
+    background: linear-gradient(to right, rgb(0, 66, 248) , rgb(0, 235, 243));
+}   
+.text_tele{
+    background: linear-gradient(to right, rgb(133, 241, 241) , rgb(215, 253, 109));
+}
+.text_telef{
+    background: linear-gradient(to right, rgb(63, 250, 88) , rgb(46, 240, 240));
+}
+.lap{
+    background: linear-gradient(to right, rgb(63, 250, 88) , rgb(46, 240, 240));
+    font-size: 13px;
+    line-height: 1,4;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden ;
+}
+.tel{
+    background: linear-gradient(to right, rgb(253, 253, 253) , rgb(142, 143, 143));
+    font-size: 13px;
+    line-height: 1,4;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden ;
+
+}
+.tele{
+    background: linear-gradient(to right, rgb(34, 88, 238) , rgb(46, 137, 240));
+    font-size: 13px;
+    line-height: 1,4;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden ;
+}
+@media(max-width:1000px){
+#Titulo{
+    background-color: rgb(0, 255, 242);
+    height: 50px;
+    margin: 0%;
+    border-bottom: 3px solid rgb(0, 100, 20);
+}
+.master{
+    display: flex;
+    height: 220px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+.hijo1{
+    color: rgb(2, 2, 2);
+    background-color: rgba(0, 132, 255, 0.705);
+    width: 33.33%;
+    height: 200px;
+    margin: 15px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+.hijo2{
+    background-color: rgba(0, 81, 255, 0.801);
+    width: 33.33%;
+    height: 200px;
+    margin: 15px;
+    cursor: pointer;
+    border-radius: 12px;
+
+}
+.hijo3{
+    background: linear-gradient(to right, rgb(0, 138, 0) , rgb(0, 235, 243));
+    width: 33.33%;
+    height: 200px;
+    margin: 15px;
+    cursor: pointer;
+    border-radius: 12px;
+
+}
+.text_lap{
+    color: white;
+    background: linear-gradient(to right, rgb(0, 66, 248) , rgb(0, 235, 243));
+}   
+.text_tele{
+    background: linear-gradient(to right, rgb(133, 241, 241) , rgb(215, 253, 109));
+}
+.text_telef{
+    background: linear-gradient(to right, rgb(63, 250, 88) , rgb(46, 240, 240));
+}
+.lap{
+    background: linear-gradient(to right, rgb(63, 250, 88) , rgb(46, 240, 240));
+    font-size: 13px;
+    line-height: 1,4;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden ;
+}
+.tel{
+    background: linear-gradient(to right, rgb(253, 253, 253) , rgb(142, 143, 143));
+    font-size: 13px;
+    line-height: 1,4;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden ;
+
+}
+.tele{
+    background: linear-gradient(to right, rgb(34, 88, 238) , rgb(46, 137, 240));
+    font-size: 13px;
+    line-height: 1,4;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden ;
+    
+}
+}

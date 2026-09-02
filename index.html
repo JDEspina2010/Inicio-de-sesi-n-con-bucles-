@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,13 @@
   <link rel="stylesheet" href="estilos.css">
   <script src="codigo.js"></script>
 </head>
+
 <body>
 
   <div class="contenedor">
 
     <div class="seccion izquierda">
-      
+
       <div class="caja_master">
         <div class="hijo1">
           <img src="imagenes/logo.jpg" alt="Logo" class="logo-img" onerror="this.style.display='none'">
@@ -20,7 +22,7 @@
         <div class="hijo2">
           <nav aria-label="breadcrumb">
             <ol class="menu-navegacion">
-              <li class="item-navegacion"><a href="#">Iniciar sesión</a></li>
+              <li class="item-navegacion">Inisio de sesion</li>
               <li class="item-navegacion activo" aria-current="page">Registrarse</li>
             </ol>
           </nav>
@@ -36,8 +38,8 @@
         <form class="formulario" onsubmit="event.preventDefault(); inicio();">
           <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Correo electrónico / Nombre de usuario</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Tu correo o usuario" required>
-            <div id="emailHelp" class="form-text">Nunca compartiremos tu correo electrónico con nadie más.</div>
+            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Tu correo o usuario" required>
+            <div id="emailHelp" class="form-text">Nunca compartiremos tu información con nadie más.</div>
           </div>
 
           <div class="mb-3">
@@ -50,7 +52,7 @@
             <label class="form-check-label" for="exampleCheck1">No soy un robot</label>
           </div>
 
-          <button type="submit" class="btn btn-login">Iniciar sesión</button>
+          <button type="submit" class="btn btn-login" onclick="inicio()">Inicio de sesion</button>
           <p id="notificacion"></p>
         </form>
       </div>
@@ -71,7 +73,8 @@
 
         <div class="mb-3">
           <label for="emailRegistro" class="form-label">Correo electrónico</label>
-          <input type="email" class="form-control" id="emailRegistro" placeholder="correo@ejemplo.com" required>
+
+          <input type="text" class="form-control" id="emailRegistro" placeholder="correo@ejemplo.com" required>
         </div>
 
         <div class="mb-3">
@@ -84,7 +87,7 @@
           <input type="password" class="form-control" id="passRegistro" placeholder="Crea una contraseña" required>
         </div>
 
-        <button type="submit" class="btn btn-registro">Registrarse</button>
+        <button type="submit" class="btn btn-registro" onclick="inicio()">Registrarse</button>
         <p id="notificacionRegistro"></p>
       </form>
     </div>
@@ -92,4 +95,5 @@
   </div>
 
 </body>
+
 </html>
