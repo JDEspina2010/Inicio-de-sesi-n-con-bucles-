@@ -32,3 +32,12 @@ body {
 .carrusel-item:hover {
   transform: scale(1.2);
 }
+.titulo{
+    color: rgb(2, 2, 2);
+    background-color: rgba(0, 132, 255, 0.705);
+    width: 33.33%;
+    height: 50px;
+    margin: 15px;
+    cursor: pointer;
+    border-radius: 12px;
+}
